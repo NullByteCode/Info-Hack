@@ -4,7 +4,7 @@ from tools.banner import grabbing
 from tools.dnsresolver import resolver
 from tools.portscan import scan
 from tools.dirbrute import bruteforce
-from tools.whois import obter_whois
+from tools.whois import get_whois
 from tools.xss import scan_xss
 
 linha = "-" * 78
@@ -27,7 +27,7 @@ OPTIONS = {
     "02": scan_xss,
     "03": resolver,
     "04": grabbing,
-    "05": obter_whois,
+    "05": get_whois,
     "06": bruteforce,
     "00": sys.exit,
 }
