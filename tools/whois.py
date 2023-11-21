@@ -4,7 +4,7 @@ import whois
 
 linha = "-" * 78
 
-def obter_whois():
+def get_whois():
     try:
         print("MODO DE USO: www.teste.com")
         print(linha)
