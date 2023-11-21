@@ -47,7 +47,7 @@ def menu_opcoes():
     print(linha)
 
 
-def obter_entrada_usuario():
+def get_user_data():
     while True:
         entry = input("[+] SELECIONE A OPÇÃO: ")
         print(linha)
@@ -61,7 +61,7 @@ def main():
     try:
         while True:
             menu_opcoes()
-            entry = obter_entrada_usuario()
+            entry = get_user_data()
             if entry == "00":
                 print(f"SAINDO!!!\n{linha}")
                 sys.exit()
